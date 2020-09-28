@@ -1,7 +1,9 @@
 CppFBP
 ===
 
-C++ Implementation of Flow-Based Programming (FBP)
+### C++ Implementation of Flow-Based Programming (FBP)
+
+General web site on Flow-Based Programming: https://jpaulm.github.io/fbp/ .
 
 General
 ---
