@@ -14,7 +14,7 @@ FBP is a particular form of dataflow programming based on bounded buffers, infor
 
 One interesting aspect of this implementation is that it supports the scripting language `Lua`, so large parts of your networks can be written in a scripting language if desired.
 
-This implementation is based on an older C implementation called [THREADN](https://github.com/jpaulm/threadn/blob/master/README.md), which used `longjmp` and `setjmp` to control process scheduling.  The scheduling parts of CppFBP now use [BOOST](https://www.boost.org/) instead of `longjmp` and `setjmp`. Much of the rest of the overall THREADN architecture has been incorporated into CppFBP - in particular, THREADN allowed networks to be defined dynamically or statically - this has been preserved in CppFBP.  See the description of "static" vs. "dynamic" in https://github.com/jpaulm/threadn/blob/master/README.md .
+This implementation is based on an older C implementation called [THREADN](https://github.com/jpaulm/threadn/blob/master/README.md), which used `longjmp` and `setjmp` to control process scheduling.  The scheduling parts of CppFBP now use [Boost](https://www.boost.org/) instead of `longjmp` and `setjmp`. Much of the rest of the overall THREADN architecture has been incorporated into CppFBP - in particular, THREADN allowed networks to be defined dynamically or statically - this has been preserved in CppFBP.  See the description of "static" vs. "dynamic" in https://github.com/jpaulm/threadn/blob/master/README.md .
 
 Web sites for FBP: 
 * http://www.jpaulmorrison.com/fbp/
@@ -30,8 +30,15 @@ Services supported by Lua interface, and some sample CppFBP/Lua scripts
 Prerequisites
 ---
 
-Download and install Microsoft Visual Studio
+Download and install Microsoft Visual Studio (Community)
 
+If installing this for the first time, you may have to do the following:
+
+    Go to Tools -> Customize.
+    In the popup window, select the Commands tab.
+    Select the Menu bar: button, and in the dropdown menu select View
+    Click Reset All and confirm.
+    
 Download and install `Boost` - http://www.boost.org/
 
 Download and install `Lua` - http://www.lua.org/
@@ -47,6 +54,7 @@ Update following macros with correct version numbers: `BOOST_INCLUDE`, `BOOST_LI
  
 or, more simply, in Windows Explorer, just go to `SolutionSettings`, open it, open `UserMacros.props`, and make, apply and save your changes.
 
+Then go to `File/Save UserMacros` (not sure if this is necessary).
 
 Build FBP Project
 ---
