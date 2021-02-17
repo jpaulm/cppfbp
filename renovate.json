@@ -5,5 +5,9 @@
   "automerge": true,
   "major": {
     "automerge": false
-  }
+  },
+  "packageRules": [{
+     "packageNames": ["boost"],
+     "allowedVersions": "<=1.75.0"
+   }]
 }
