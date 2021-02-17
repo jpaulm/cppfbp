@@ -44,7 +44,7 @@ Download and install `Boost` - http://www.boost.org/
 
     Go to where the extracted file was c:\boost_x_yy_zz.
     Click on booststrap.bat (don't bother to type on the command window just wait and don't close the window that is the place I had my problem that took me two weeks to solve. After a while the booststrap will run and produce the same file, but now with two different names: b2, and bjam.
-    Click on b2 and wait it to run.
+    Click on b2 and wait for it to run.
     This takes a looong time.
     Click on bjam and wait it to run. Then a folder will be produce called stage. [no longer needed, apparently]
     Right click on the project.
