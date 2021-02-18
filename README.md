@@ -52,7 +52,7 @@ Download and install `Boost` - http://www.boost.org/
     Click on linker.
     Click on general.
     Click on include additional library directory.
-    Select the part of the library e.g. c:\boost_1_57_0\stage\lib.
+    Select the part of the library e.g. c:\boost_1_75_0\stage\lib.
     
 Thanks, Wu Jie!    
 
